@@ -3,6 +3,17 @@ Project for the chainlinkConstellation hackathon.
 AbstractedAccounts controled by a domainResolver from a nameService in the format of an erc721 NFT that can make TXs across all evmEcosystem by being linked to otherChainVersions.
 
 
+Working Deployed addresses:
+- Sepolia
+0x1b5362c8fac73f0e04dcb274d7f64e5bc3923ce1
+- Mumbai
+0xb43cc083DD0c07eE43a4Af5542979E4ea642ffBB
+- Fuji
+0x5154440E0c8711264F543A4431C8657fF44A7C40
+
+
+
+
 My inspiration for this project came from 3 things:
 - Wanting to use the erc6551 tokenBoundAccount standard
 - Loving crossChain stuff
