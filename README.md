@@ -11,7 +11,7 @@ My inspiration for this project came from 3 things:
 This is how I came up with this "./crossChainNameServiceBoundAccount".
 
 
-What it does================================================================================================================================
+What it does===================================================================
 It creates a resolver of a domain of a nameService in the format of a erc721 nonFungibleToken, then creates a erc6551 abstracted account that is controled by that nftFormatResolver and gives it the capacity to do crossChainTxs thanks to CCIP infrastructure. 
 
 This erc6551Accounts are also created multichain, so if I create my nameServiceBoundAccount "mySampleAccount" on polygon, another version of "mySampleAccount" is created on ethereumMainnet and theyre linked. This means that with my polygonVersion of "mySampleAccount", I can control my ethereumMainnetVersion and this enables two important things for the whole evmEcosystem:
@@ -27,13 +27,13 @@ Is important to note that the nameServices works in the chain is implemented but
 
 
 
-How we built it================================================================================================================================
+How we built it================================================================
 I build a customErc721 contract that mints just one id (just one NFT), a customErc6551AccountImplementatation and a crossChainVersion of the erc6551Account that is linked to the anotherChainAccount and the erc6551Registry which in combination with CCIP infrastructure creates the ccNameServiceBoundAccounts and links them across chains so they can be controled.
 Aside from the contracts I used the regular fullStackDapp stack; ethersJs, reactJs, tenderly, metamask.
 
 
 
-What's next for "./crossChain6551NameService"==================================================================================================
+What's next for "./crossChain6551NameService"==================================
 Once CCIP adds more available chains, deploy the protocol / project there so that the user have more options to use and, in the case that CCIP starts being used on nonEvmCompatibleChains, develop that specific blockchain version of the crossChainNameServiceBoundAccount.
 
 
